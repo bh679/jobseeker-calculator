@@ -1,6 +1,6 @@
 {
   "name": "jobseeker-calculator",
-  "version": "1.00.0001",
+  "version": "1.00.0002",
   "description": "Client-side calculator for JobSeeker payments from Centrelink Australia.",
   "main": "index.js",
   "scripts": {
