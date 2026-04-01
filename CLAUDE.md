@@ -13,7 +13,7 @@ human oversight at each stage.
 - **Project:** JobSeeker Calculator
 - **Live URL:** brennan.games/jobseeker-calculator
 - **Repos:** jobseeker-calculator
-- **GitHub Project:** https://github.com/bh679?tab=projects (Project #{{PROJECT_NUMBER}})
+- **GitHub Project:** https://github.com/bh679?tab=projects (Project #13)
 - **Wiki:** github.com/bh679/jobseeker-calculator/wiki
 
 ---
@@ -233,7 +233,7 @@ GitHub Projects board interaction across all Claude-powered projects.
 
 ### Find an existing item
 ```bash
-gh project item-list {{PROJECT_NUMBER}} --owner bh679 --format json | jq '.items[] | select(.title | test("search term"; "i"))'
+gh project item-list 13 --owner bh679 --format json | jq '.items[] | select(.title | test("search term"; "i"))'
 ```
 
 ### Update item status
