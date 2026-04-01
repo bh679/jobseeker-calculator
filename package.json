@@ -1,0 +1,16 @@
+{
+  "name": "jobseeker-calculator",
+  "version": "1.00.0000",
+  "description": "Client-side calculator for JobSeeker payments from Centrelink Australia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "bh679",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}

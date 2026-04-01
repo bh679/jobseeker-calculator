@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(gh api:*)",
+      "Bash(git init:*)",
+      "Bash(cp \"/Users/brennanhatton/Projects/Claude Templates/playbooks/gates/gate-1-plan.md\" /Users/brennanhatton/Projects/JobSeekerCalulator/.claude/gates/)",
+      "Bash(cp \"/Users/brennanhatton/Projects/Claude Templates/playbooks/gates/gate-2-test.md\" /Users/brennanhatton/Projects/JobSeekerCalulator/.claude/gates/)",
+      "Bash(cp \"/Users/brennanhatton/Projects/Claude Templates/playbooks/gates/gate-3-merge.md\" /Users/brennanhatton/Projects/JobSeekerCalulator/.claude/gates/)",
+      "Bash(npm install:*)",
+      "Bash(\"/Users/brennanhatton/Projects/Claude Templates/hooks/git/install-hooks.sh\")",
+      "Bash(\"/Users/brennanhatton/Projects/Claude Templates/hooks/versioning/install-hooks.sh\")",
+      "Bash(git add:*)"
+    ]
+  }
+}
