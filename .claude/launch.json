@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "dev",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "3002", "--no-clipboard"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3002"],
       "port": 3002
     }
   ]
