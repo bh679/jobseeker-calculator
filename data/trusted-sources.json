@@ -1,0 +1,36 @@
+{
+  "description": "Authorised domains for data references in jobseeker-rates.json. Only URLs from these domains may be used as references for payment rates, thresholds, and rules.",
+  "lastReviewed": "2026-04-02",
+  "sources": [
+    {
+      "domain": "servicesaustralia.gov.au",
+      "name": "Services Australia",
+      "type": "primary",
+      "description": "Official government agency administering Centrelink payments. Authoritative source for payment rules, eligibility criteria, and income/asset test details."
+    },
+    {
+      "domain": "dss.gov.au",
+      "name": "Department of Social Services",
+      "type": "primary",
+      "description": "Federal department responsible for social security policy. Publishes official indexed payment rates twice yearly (March 20 and September 20)."
+    },
+    {
+      "domain": "legislation.gov.au",
+      "name": "Federal Register of Legislation",
+      "type": "primary",
+      "description": "Official source for the Social Security Act 1991 and Social Security (Administration) Act 1999 which define payment rules in law."
+    },
+    {
+      "domain": "centrelink.gov.au",
+      "name": "Centrelink",
+      "type": "primary",
+      "description": "Centrelink online services portal. Redirects to Services Australia for most content but some legacy URLs remain active."
+    },
+    {
+      "domain": "humanservices.gov.au",
+      "name": "Department of Human Services (legacy)",
+      "type": "secondary",
+      "description": "Former department name before Services Australia rebrand. Some archived content and PDFs still hosted here."
+    }
+  ]
+}

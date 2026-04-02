@@ -1,0 +1,109 @@
+{
+  "effectiveDate": "2026-03-20",
+  "nextIndexationDate": "2026-09-20",
+  "dataVersion": "1.0.0",
+  "disclaimer": "These rates are estimates based on publicly available government data. For official rates and eligibility, visit Services Australia.",
+  "categories": [
+    {
+      "id": "single",
+      "label": "Single, 22 or older, no children",
+      "fortnightlyRate": 795.20,
+      "description": "Base JobSeeker Payment for single person aged 22 to Age Pension age with no dependent children. Includes Energy Supplement.",
+      "referenceIds": ["ref-sa-rates", "ref-dss-indexation-mar2026"]
+    },
+    {
+      "id": "single_children",
+      "label": "Single, principal carer with children",
+      "fortnightlyRate": 850.60,
+      "description": "JobSeeker Payment for single principal carers with dependent children. Includes Energy Supplement.",
+      "referenceIds": ["ref-sa-rates", "ref-dss-indexation-mar2026"]
+    },
+    {
+      "id": "single_55_plus",
+      "label": "Single, 55 or older, on payment 9+ continuous months",
+      "fortnightlyRate": 853.60,
+      "description": "Higher rate for single recipients aged 55+ who have been on payment for 9 or more continuous months. Includes Energy Supplement.",
+      "referenceIds": ["ref-sa-rates", "ref-dss-indexation-mar2026"]
+    },
+    {
+      "id": "partnered",
+      "label": "Partnered (each)",
+      "fortnightlyRate": 725.30,
+      "description": "JobSeeker Payment rate for each member of a couple. Includes Energy Supplement.",
+      "referenceIds": ["ref-sa-rates", "ref-dss-indexation-mar2026"]
+    }
+  ],
+  "incomeTest": {
+    "description": "Personal income test for JobSeeker Payment. Income above the free area reduces the payment in two taper bands.",
+    "freeArea": 150,
+    "freeAreaUnit": "fortnightly",
+    "taperBands": [
+      {
+        "from": 150,
+        "to": 256,
+        "rate": 0.50,
+        "description": "50 cents per dollar between $150 and $256 per fortnight"
+      },
+      {
+        "from": 256,
+        "to": null,
+        "rate": 0.60,
+        "description": "60 cents per dollar above $256 per fortnight"
+      }
+    ],
+    "referenceIds": ["ref-sa-income-test"]
+  },
+  "partnerIncomeTest": {
+    "description": "If your partner earns above the partner income free area, your payment reduces by the taper rate for each dollar over the threshold.",
+    "freeArea": 1310,
+    "freeAreaUnit": "fortnightly",
+    "taperRate": 0.60,
+    "referenceIds": ["ref-sa-income-test"]
+  },
+  "assetTest": {
+    "description": "Asset test for allowance payments including JobSeeker. This is a hard cut-off — if assets exceed the threshold, payment is zero. The principal home is excluded.",
+    "type": "hard_cutoff",
+    "thresholds": {
+      "single_homeowner": 314000,
+      "single_non_homeowner": 566000,
+      "couple_homeowner": 470000,
+      "couple_non_homeowner": 722000
+    },
+    "excludes": ["Principal home (the home you live in)"],
+    "referenceIds": ["ref-sa-assets-test"]
+  },
+  "references": [
+    {
+      "id": "ref-sa-rates",
+      "url": "https://www.servicesaustralia.gov.au/how-much-jobseeker-payment-you-can-get?context=51411",
+      "title": "How much JobSeeker Payment you can get",
+      "publisher": "Services Australia",
+      "accessedDate": "2026-04-02",
+      "notes": "Official page listing maximum payment rates by situation. Rates include Energy Supplement."
+    },
+    {
+      "id": "ref-dss-indexation-mar2026",
+      "url": "https://www.dss.gov.au/about-the-department/publications-articles/corporate-publications/budget-and-additional-estimates-statements/indexation-rates-20-march-2026",
+      "title": "Indexation Rates - 20 March 2026",
+      "publisher": "Department of Social Services",
+      "accessedDate": "2026-04-02",
+      "notes": "Official indexed rates publication for the March 2026 indexation period."
+    },
+    {
+      "id": "ref-sa-income-test",
+      "url": "https://www.servicesaustralia.gov.au/income-test-for-jobseeker-payment?context=51411",
+      "title": "Income test for JobSeeker Payment",
+      "publisher": "Services Australia",
+      "accessedDate": "2026-04-02",
+      "notes": "Official income test rules including personal and partner income tests, taper rates, and income free areas."
+    },
+    {
+      "id": "ref-sa-assets-test",
+      "url": "https://www.servicesaustralia.gov.au/income-and-assets-tests-for-jobseeker-payment?context=51411",
+      "title": "Income and assets tests for JobSeeker Payment",
+      "publisher": "Services Australia",
+      "accessedDate": "2026-04-02",
+      "notes": "Official asset test thresholds. JobSeeker uses a hard cut-off (no taper) for assets."
+    }
+  ]
+}
